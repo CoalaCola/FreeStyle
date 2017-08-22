@@ -522,7 +522,7 @@ my money on my mind.</string>
                     <navigationItem key="navigationItem" title="Title" id="mLu-C5-lwo">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="AeD-HV-3n1">
                             <connections>
-                                <segue destination="8LP-Am-OUz" kind="unwind" unwindAction="unwindToProfilePageWithSegue:" id="Ugx-4n-cUh"/>
+                                <action selector="doneButtonPressed:" destination="hKL-C2-K3Z" id="8GC-x6-hSg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -532,6 +532,7 @@ my money on my mind.</string>
                         <outlet property="nameTextField" destination="bbF-i0-uuY" id="ARR-3H-Oth"/>
                         <outlet property="slangTextView" destination="aIA-iI-hKc" id="l4t-Tt-STV"/>
                         <outlet property="typeTextField" destination="79F-J1-GIW" id="Tll-ep-ID8"/>
+                        <segue destination="8LP-Am-OUz" kind="unwind" identifier="BackToProfilePageSegue" unwindAction="unwindToProfilePageWithSegue:" id="iVY-Os-yCR"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qy3-xd-kgX" userLabel="First Responder" sceneMemberID="firstResponder"/>

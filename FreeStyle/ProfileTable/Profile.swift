@@ -15,3 +15,8 @@ struct Profile {
     var slang: String?
 
 }
+
+struct PropertyKeys {
+    static let BackToProfilePageSegue = "BackToProfilePageSegue"
+    
+}

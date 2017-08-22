@@ -22,6 +22,30 @@ UINavigationControllerDelegate {
   
     
     
+    @IBAction func doneButtonPressed(_ sender: Any) {
+        
+         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+         guard (nameTextField.text?.characters.count)! < 20 && (nameTextField.text?.characters.count)! > 0 else {
+            func nameLengthWrong(){
+                let alertController = UIAlertController(title: "Name length wrong", message: "Name length should between 0 ~ 20 characters.", preferredStyle: .alert)
+                alertController.addAction(cancelAction)
+                present(alertController, animated: true, completion: nil)
+            }
+           nameLengthWrong()
+            return
+        }
+        guard (typeTextField.text?.characters.count)! < 20 && (typeTextField.text?.characters.count)! > 0 else {
+            func typeLengthWrong(){
+                let alertController = UIAlertController(title: "Type length wrong", message: "Type length should between 0 ~ 20 characters.", preferredStyle: .alert)
+                alertController.addAction(cancelAction)
+                present(alertController, animated: true, completion: nil)
+            }
+            typeLengthWrong()
+            return
+        }
+        performSegue(withIdentifier: PropertyKeys.BackToProfilePageSegue, sender: nil)
+    }
     
     
     
