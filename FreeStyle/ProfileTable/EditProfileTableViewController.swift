@@ -14,7 +14,8 @@ UINavigationControllerDelegate {
     var profile: Profile?
     var mainPlayerImage: UIImage?
     
-    @IBOutlet weak var mainPlayerImageView: UIImageView!
+    @IBOutlet weak var mainPlayerImageView: UIButton!
+    
     @IBOutlet weak var slangTextView: UITextView!
     @IBOutlet weak var typeTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
@@ -29,13 +30,13 @@ UINavigationControllerDelegate {
         print("info \(info)")
         let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         
-        mainPlayerImageView.image = image
+        mainPlayerImageView.setImage(image, for: .normal)
         dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        mainPlayerImageView.imageView?.contentMode = .scaleAspectFill
         slangTextView.layer.borderWidth = 1
         slangTextView.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         slangTextView.layer.cornerRadius = 10
@@ -43,9 +44,16 @@ UINavigationControllerDelegate {
         navigationItem.title = profile?.name
         
         nameTextField.text = profile?.name
+        nameTextField.clearsOnInsertion = true
+        nameTextField.clearButtonMode = .whileEditing
         typeTextField.text = profile?.type
+        typeTextField.clearsOnInsertion = true
+        typeTextField.clearButtonMode = .whileEditing
         slangTextView.text = profile?.slang
-        mainPlayerImageView.image = mainPlayerImage
+        
+        
+
+        mainPlayerImageView.setImage(mainPlayerImage, for: .normal)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -98,7 +106,7 @@ UINavigationControllerDelegate {
         profile?.name = nameTextField.text ?? ""
         profile?.type = typeTextField.text ?? ""
         profile?.slang = slangTextView.text ?? ""
-        mainPlayerImage = mainPlayerImageView.image
+        mainPlayerImage = mainPlayerImageView.imageView?.image
           }
 
     /*

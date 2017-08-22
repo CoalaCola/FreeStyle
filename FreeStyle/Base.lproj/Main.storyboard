@@ -69,7 +69,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vera" translatesAutoresizingMaskIntoConstraints="NO" id="nAf-Oi-QRd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tony" translatesAutoresizingMaskIntoConstraints="NO" id="nAf-Oi-QRd">
                                 <rect key="frame" x="257" y="332" width="100" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -158,8 +158,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vera" translatesAutoresizingMaskIntoConstraints="NO" id="rdT-EK-mxC">
-                                                    <rect key="frame" x="52.5" y="15" width="170" height="170"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chou" translatesAutoresizingMaskIntoConstraints="NO" id="rdT-EK-mxC">
+                                                    <rect key="frame" x="102.5" y="15" width="170" height="170"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="170" id="Vya-Po-FjS"/>
                                                         <constraint firstAttribute="height" constant="170" id="pxv-sL-G9o"/>
@@ -168,7 +168,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="rdT-EK-mxC" firstAttribute="centerY" secondItem="Rnq-pb-fEt" secondAttribute="centerY" id="Tgh-0x-6LE"/>
-                                                <constraint firstItem="rdT-EK-mxC" firstAttribute="centerX" secondItem="Rnq-pb-fEt" secondAttribute="centerX" constant="-50" id="md0-MJ-U4K"/>
+                                                <constraint firstItem="rdT-EK-mxC" firstAttribute="centerX" secondItem="Rnq-pb-fEt" secondAttribute="centerX" id="md0-MJ-U4K"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -185,8 +185,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAS-R2-SOZ">
-                                                    <rect key="frame" x="210" y="11.5" width="35" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tony" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAS-R2-SOZ">
+                                                    <rect key="frame" x="209.5" y="11.5" width="36.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -213,8 +213,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJL-1j-b2l">
-                                                    <rect key="frame" x="210" y="11.5" width="35" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slnag King" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJL-1j-b2l">
+                                                    <rect key="frame" x="187" y="11.5" width="81.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -299,7 +299,6 @@
         <!--Slang Time View Controller-->
         <scene sceneID="Lhm-FE-bNZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KOM-RL-nhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ChuDialog" id="OTH-8N-P0J" customClass="SlangTimeViewController" customModule="FreeStyle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="woodyDialog" id="82A-vm-GJl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -341,7 +340,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vera" translatesAutoresizingMaskIntoConstraints="NO" id="Mx6-wp-1lz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tony" translatesAutoresizingMaskIntoConstraints="NO" id="Mx6-wp-1lz">
                                 <rect key="frame" x="285" y="350" width="100" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -375,6 +374,7 @@ my money on my mind.</string>
                         <outlet property="chuLabel" destination="gUl-bf-Z0g" id="upT-D8-uPv"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KOM-RL-nhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1948" y="927.88605697151434"/>
         </scene>
@@ -396,25 +396,21 @@ my money on my mind.</string>
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vera" translatesAutoresizingMaskIntoConstraints="NO" id="sTV-mq-u7f">
-                                                    <rect key="frame" x="52.5" y="15" width="170" height="170"/>
+                                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2e-Wk-9I5">
+                                                    <rect key="frame" x="102.5" y="14" width="170" height="170"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="170" id="GgT-OY-yNo"/>
-                                                        <constraint firstAttribute="height" constant="170" id="pRK-Qa-zOD"/>
+                                                        <constraint firstAttribute="height" constant="170" id="0bn-Cy-EcV"/>
+                                                        <constraint firstAttribute="width" constant="170" id="n6r-Rf-4eN"/>
                                                     </constraints>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2e-Wk-9I5">
-                                                    <rect key="frame" x="245" y="84" width="100" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Change Photo"/>
+                                                    <state key="normal" backgroundImage="Chou"/>
                                                     <connections>
                                                         <action selector="changePhotoButton:" destination="hKL-C2-K3Z" eventType="touchUpInside" id="32J-0Y-Poj"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="sTV-mq-u7f" firstAttribute="centerX" secondItem="POC-n3-BvF" secondAttribute="centerX" constant="-50" id="8lc-E9-04D"/>
-                                                <constraint firstItem="sTV-mq-u7f" firstAttribute="centerY" secondItem="POC-n3-BvF" secondAttribute="centerY" id="pV8-Vy-40o"/>
+                                                <constraint firstItem="e2e-Wk-9I5" firstAttribute="centerY" secondItem="POC-n3-BvF" secondAttribute="centerY" id="TLa-Su-lR7"/>
+                                                <constraint firstItem="e2e-Wk-9I5" firstAttribute="centerX" secondItem="POC-n3-BvF" secondAttribute="centerX" id="alO-ta-ePb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -532,7 +528,7 @@ my money on my mind.</string>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="mainPlayerImageView" destination="sTV-mq-u7f" id="OC9-f5-Zu9"/>
+                        <outlet property="mainPlayerImageView" destination="e2e-Wk-9I5" id="vAO-9k-iax"/>
                         <outlet property="nameTextField" destination="bbF-i0-uuY" id="ARR-3H-Oth"/>
                         <outlet property="slangTextView" destination="aIA-iI-hKc" id="l4t-Tt-STV"/>
                         <outlet property="typeTextField" destination="79F-J1-GIW" id="Tll-ep-ID8"/>
@@ -542,6 +538,30 @@ my money on my mind.</string>
                 <exit id="8LP-Am-OUz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="970.39999999999998" y="927.88605697151434"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DEQ-1V-pKH">
+            <objects>
+                <viewController id="IGX-lL-OLc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ixv-a6-KA8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Woody" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buS-WS-IX1">
+                                <rect key="frame" x="122" y="227" width="163" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="LMH-Nu-2Y1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yh-Sm-F68" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1527.2" y="937.78110944527748"/>
         </scene>
         <!--Profile-->
         <scene sceneID="OGn-Bi-0cC">
@@ -574,7 +594,8 @@ my money on my mind.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Vera" width="960" height="960"/>
+        <image name="Chou" width="637" height="637"/>
+        <image name="Tony" width="278" height="324"/>
         <image name="Woody" width="956" height="956"/>
         <image name="imageView:s5B-N7-vE8:image" width="954" height="960">
             <mutableData key="keyedArchiveRepresentation">

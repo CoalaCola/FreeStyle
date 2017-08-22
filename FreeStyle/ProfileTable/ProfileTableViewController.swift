@@ -17,7 +17,7 @@ class ProfileTableViewController: UITableViewController {
     }
     @IBOutlet weak var mainPlayerImageView: UIImageView!
     var profile = Profile()
-    var mainPlayerImage = #imageLiteral(resourceName: "Vera")
+    var mainPlayerImage = #imageLiteral(resourceName: "Chou")
    
     
     @IBOutlet weak var slangLabel: UILabel!
@@ -26,6 +26,10 @@ class ProfileTableViewController: UITableViewController {
     
     @IBAction func unwindToProfilePage(segue: UIStoryboardSegue) {
         let source = segue.source as? EditProfileTableViewController
+        
+        
+        
+        
         if let profileFromEdit = source?.profile, let mainPlayerImageFromEdit = source?.mainPlayerImage {
             mainPlayerImage = mainPlayerImageFromEdit
             profile = profileFromEdit
@@ -35,8 +39,8 @@ class ProfileTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        profile.name = "Vera"
-        profile.type = "Slang Queen"
+        profile.name = "Chou"
+        profile.type = "Slang King"
         profile.slang = "You don't love me, you just love my doggy style."
         
         nameLabel.text = profile.name
