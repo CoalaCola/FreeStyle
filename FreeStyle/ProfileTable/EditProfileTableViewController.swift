@@ -14,14 +14,23 @@ UINavigationControllerDelegate {
     var profile: Profile?
     var mainPlayerImage: UIImage?
     
+    var formatter: DateFormatter! = nil
+    
+    
+    
+    
+    
     @IBOutlet weak var mainPlayerImageView: UIButton!
     
     @IBOutlet weak var slangTextView: UITextView!
     @IBOutlet weak var typeTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
   
+    @IBOutlet weak var birthdayTextField: UITextField!
     
-    
+    @IBAction func birthdayEdit(_ sender: Any) {
+        
+    }
     @IBAction func doneButtonPressed(_ sender: Any) {
         
          let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -74,10 +83,42 @@ UINavigationControllerDelegate {
         typeTextField.clearsOnInsertion = true
         typeTextField.clearButtonMode = .whileEditing
         slangTextView.text = profile?.slang
+        birthdayTextField.text = profile?.birthday
         
         
 
         mainPlayerImageView.setImage(mainPlayerImage, for: .normal)
+        
+        formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        
+        let myDatePicker = UIDatePicker()
+        
+        myDatePicker.datePickerMode = .date
+        myDatePicker.date = NSDate() as Date
+        
+        // 設置 UIDatePicker 改變日期時會執行動作的方法
+        myDatePicker.addTarget(
+            self,
+            action: #selector(EditProfileTableViewController.datePickerChanged),
+            for: .valueChanged)
+        
+        // 將 UITextField 原先鍵盤的視圖更換成 UIDatePicker
+        birthdayTextField.inputView = myDatePicker
+        
+        birthdayTextField.tag = 200
+        
+        
+        
+        
+        
+   
+        
+    }
+        
+   
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -85,7 +126,23 @@ UINavigationControllerDelegate {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         
+    @objc func hideKeyboard(tap:UITapGestureRecognizer){
+        self.view.endEditing(true)
     }
+    
+    // UIDatePicker 改變選擇時執行的動作
+    @objc func datePickerChanged(datePicker:UIDatePicker) {
+        // 依據元件的 tag 取得 UITextField
+        let myTextField =
+            self.view?.viewWithTag(200) as? UITextField
+        
+        // 將 UITextField 的值更新為新的日期
+        myTextField?.text =
+            formatter.string(from: datePicker.date)
+    }
+    
+    
+    
     @IBAction func changePhotoButton(_ sender: Any) {
         
         func chooseHowToPhoto() {
@@ -130,6 +187,7 @@ UINavigationControllerDelegate {
         profile?.name = nameTextField.text ?? ""
         profile?.type = typeTextField.text ?? ""
         profile?.slang = slangTextView.text ?? ""
+        profile?.birthday = birthdayTextField.text ?? ""
         mainPlayerImage = mainPlayerImageView.imageView?.image
           }
 

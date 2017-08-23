@@ -24,6 +24,7 @@ class ProfileTableViewController: UITableViewController {
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var birthdayLabel: UILabel!
     @IBAction func unwindToProfilePage(segue: UIStoryboardSegue) {
         let source = segue.source as? EditProfileTableViewController
         
@@ -42,10 +43,12 @@ class ProfileTableViewController: UITableViewController {
         profile.name = "Chou"
         profile.type = "Slang King"
         profile.slang = "You don't love me, you just love my doggy style."
+        profile.birthday = "1990-02-14"
         
         nameLabel.text = profile.name
         typeLabel.text = profile.type
         slangLabel.text = profile.slang
+        birthdayLabel.text = profile.birthday
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -56,6 +59,7 @@ class ProfileTableViewController: UITableViewController {
         nameLabel.text = profile.name
         typeLabel.text = profile.type
         slangLabel.text = profile.slang
+        birthdayLabel.text = profile.birthday
         mainPlayerImageView.image = mainPlayerImage
         
     }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5604889A1F4595A800AFD17F /* SlangTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560488991F4595A800AFD17F /* SlangTimeViewController.swift */; };
 		566CE5111F4494E0007AE449 /* PlayerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566CE5101F4494E0007AE449 /* PlayerInfoView.swift */; };
+		567735361F4D7CCA0089ECB7 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567735351F4D7CCA0089ECB7 /* DatePickerViewController.swift */; };
 		56A43ED11F42F940006477B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A43ED01F42F940006477B7 /* AppDelegate.swift */; };
 		56A43ED31F42F940006477B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A43ED21F42F940006477B7 /* ViewController.swift */; };
 		56A43ED61F42F940006477B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A43ED41F42F940006477B7 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		560488991F4595A800AFD17F /* SlangTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlangTimeViewController.swift; sourceTree = "<group>"; };
 		566CE5101F4494E0007AE449 /* PlayerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoView.swift; sourceTree = "<group>"; };
+		567735351F4D7CCA0089ECB7 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		56A43ECD1F42F940006477B7 /* FreeStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56A43ED01F42F940006477B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56A43ED21F42F940006477B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				56BFEDBB1F456B5C00C5C6A0 /* ProfileTableViewController.swift */,
 				56BFEDBD1F456B9600C5C6A0 /* EditProfileTableViewController.swift */,
+				567735351F4D7CCA0089ECB7 /* DatePickerViewController.swift */,
 				56BFEDBF1F45741000C5C6A0 /* Profile.swift */,
 			);
 			path = ProfileTable;
@@ -194,6 +197,7 @@
 				56A43ED11F42F940006477B7 /* AppDelegate.swift in Sources */,
 				5604889A1F4595A800AFD17F /* SlangTimeViewController.swift in Sources */,
 				56BFEDC01F45741000C5C6A0 /* Profile.swift in Sources */,
+				567735361F4D7CCA0089ECB7 /* DatePickerViewController.swift in Sources */,
 				56A43EE31F4412E9006477B7 /* PlayerInfo.swift in Sources */,
 				566CE5111F4494E0007AE449 /* PlayerInfoView.swift in Sources */,
 				56BFEDBE1F456B9600C5C6A0 /* EditProfileTableViewController.swift in Sources */,
