@@ -416,7 +416,6 @@ my money on my mind.</string>
                                                         <constraint firstAttribute="height" constant="170" id="0bn-Cy-EcV"/>
                                                         <constraint firstAttribute="width" constant="170" id="n6r-Rf-4eN"/>
                                                     </constraints>
-                                                    <state key="normal" backgroundImage="Chou"/>
                                                     <connections>
                                                         <action selector="changePhotoButton:" destination="hKL-C2-K3Z" eventType="touchUpInside" id="32J-0Y-Poj"/>
                                                     </connections>

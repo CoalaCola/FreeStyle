@@ -16,7 +16,7 @@ UINavigationControllerDelegate {
     
     var formatter: DateFormatter! = nil
     
-    
+    var isChangeImage = false
     
     
     
@@ -53,6 +53,7 @@ UINavigationControllerDelegate {
             typeLengthWrong()
             return
         }
+        
         performSegue(withIdentifier: PropertyKeys.BackToProfilePageSegue, sender: nil)
     }
     
@@ -60,7 +61,7 @@ UINavigationControllerDelegate {
     
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        print("info \(info)")
+        isChangeImage = true
         let image = info[UIImagePickerControllerOriginalImage] as? UIImage
         
         mainPlayerImageView.setImage(image, for: .normal)
@@ -107,24 +108,8 @@ UINavigationControllerDelegate {
         birthdayTextField.inputView = myDatePicker
         
         birthdayTextField.tag = 200
-        
-        
-        
-        
-        
-   
-        
-    }
-        
-   
-        
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
+      }
+    
         
     @objc func hideKeyboard(tap:UITapGestureRecognizer){
         self.view.endEditing(true)
@@ -145,6 +130,8 @@ UINavigationControllerDelegate {
     
     @IBAction func changePhotoButton(_ sender: Any) {
         
+        
+        
         func chooseHowToPhoto() {
        // setting alertController
             let alertController = UIAlertController(title: "Photo", message: "Choose from", preferredStyle: .actionSheet)
@@ -152,7 +139,7 @@ UINavigationControllerDelegate {
             let cameraAction = UIAlertAction(title: "Camera", style: .default) {(action: UIAlertAction!) -> Void  in
                 
                 let imagePicker = UIImagePickerController()
-                imagePicker.allowsEditing = true
+                
                 imagePicker.sourceType = .camera
                 imagePicker.delegate = self
                 
@@ -189,6 +176,18 @@ UINavigationControllerDelegate {
         profile?.slang = slangTextView.text ?? ""
         profile?.birthday = birthdayTextField.text ?? ""
         mainPlayerImage = mainPlayerImageView.imageView?.image
+        
+        var imageName = profile?.imageName
+        if isChangeImage {
+            imageName = "\(Date().timeIntervalSinceReferenceDate)"
+            let url = Profile.documentsDirectory.appendingPathComponent(imageName!)
+            let data = UIImageJPEGRepresentation(mainPlayerImageView.image(for: .normal)!, 0.9)
+            try? data?.write(to: url)
+             profile?.imageName = imageName ?? "" 
+            print(imageName!)
+        }
+       
+        
           }
 
     /*

@@ -28,9 +28,6 @@ class ProfileTableViewController: UITableViewController {
     @IBAction func unwindToProfilePage(segue: UIStoryboardSegue) {
         let source = segue.source as? EditProfileTableViewController
         
-        
-        
-        
         if let profileFromEdit = source?.profile, let mainPlayerImageFromEdit = source?.mainPlayerImage {
             mainPlayerImage = mainPlayerImageFromEdit
             profile = profileFromEdit
@@ -45,10 +42,18 @@ class ProfileTableViewController: UITableViewController {
         profile.slang = "You don't love me, you just love my doggy style."
         profile.birthday = "1990-02-14"
         
+        if let profile = Profile.readFromFile(){
+            self.profile = profile
+            mainPlayerImage = profile.image!
+        }
+           
         nameLabel.text = profile.name
         typeLabel.text = profile.type
         slangLabel.text = profile.slang
         birthdayLabel.text = profile.birthday
+        print(profile.imageName)
+       
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -62,6 +67,8 @@ class ProfileTableViewController: UITableViewController {
         birthdayLabel.text = profile.birthday
         mainPlayerImageView.image = mainPlayerImage
         
+        Profile.saveToFile(profile: profile)
+        print(profile.imageName)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             

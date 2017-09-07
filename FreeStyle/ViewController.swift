@@ -13,11 +13,13 @@ class ViewController: UIViewController {
 
     var players = [Player]()
    
-    
+    let locationManager = CLLocationManager()
     
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.locationManager.requestWhenInUseAuthorization()
         
         players.append(Player(title: "Woody", asKnownAs: "Breaker Of the Chain", discipline: "top player", coordinate: CLLocationCoordinate2D(latitude: 25.0227, longitude: 121.5477), image: #imageLiteral(resourceName: "Woody"), number: 0, slang: "Im a Tiger."))
         players.append(Player(title: "Chu", asKnownAs: "doctor", discipline: "top player", coordinate: CLLocationCoordinate2D(latitude: 25.0235, longitude: 121.5491), image: #imageLiteral(resourceName: "Chu"), number: 1, slang: "I'm a God."))

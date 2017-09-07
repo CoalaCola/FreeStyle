@@ -4,6 +4,17 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>MKDirectionsRequest</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.apple.maps.directionsrequest</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,8 +31,20 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MKDirectionsApplicationSupportedModes</key>
+	<array>
+		<string>MKDirectionsModeBike</string>
+		<string>MKDirectionsModeBus</string>
+		<string>MKDirectionsModeCar</string>
+		<string>MKDirectionsModeFerry</string>
+		<string>MKDirectionsModePedestrian</string>
+		<string>MKDirectionsModeRideShare</string>
+		<string>MKDirectionsModeStreetCar</string>
+		<string>MKDirectionsModeSubway</string>
+		<string>MKDirectionsModeTrain</string>
+	</array>
 	<key>NSCameraUsageDescription</key>
-	<string>Tale Photo</string>
+	<string>Take Photo</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Screen Photo</string>
 	<key>NSPhotoLibraryUsageDescription</key>
@@ -37,8 +60,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
